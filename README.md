@@ -1,4 +1,4 @@
 Swift-Example
 =============
 
-Demonstrates a simple social feed using Swift
+Demonstrates a simple social feed app using Swift.
