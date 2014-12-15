@@ -60,6 +60,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.nameLabel!.text = article.name
         cell.messageLabel!.text = article.message
         
+        APIHelper.getImage(article.imagePath, success: { (theImage) -> () in
+            
+            cell.theImageView.image = theImage
+            
+        }) { (error) -> () in
+            
+        }
+        
         return cell
     }
     
@@ -68,6 +76,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let inset = UIEdgeInsetsMake(0, 12, 0, 0)
+        
+        if tableView.respondsToSelector(Selector("setSeparatorInset:")) {
+            tableView.separatorInset = inset
+        }
+        
+        if tableView.respondsToSelector(Selector("setLayoutMargins:")) {
+            tableView.layoutMargins = inset
+        }
+        
+        if cell.respondsToSelector(Selector("setLayoutMargins:")) {
+            cell.layoutMargins = inset
+        }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -83,7 +108,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let size = rect.size
         let labelY: CGFloat = self.dummyCell.messageLabel.frame.origin.y
-        let padding: CGFloat = 25.0
+        let padding: CGFloat = 5.0
         let height = CGFloat(ceilf(Float(size.height))) + labelY + padding
         return height
     }

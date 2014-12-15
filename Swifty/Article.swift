@@ -12,10 +12,12 @@ class Article: NSObject {
     
     var name: NSString = "";
     var message: NSString = "";
+    var imagePath: NSString = "";
     
-    init(name: NSString, message: NSString) {
+    init(name: NSString, message: NSString, imagePath: NSString) {
         
         self.name = name;
         self.message = message;
+        self.imagePath = imagePath;
     }
 }

@@ -33,12 +33,28 @@ class APIHelper: NSObject {
                     
                     let name: NSString = dict.valueForKey("name") as NSString
                     let message: NSString = dict.valueForKey("message") as NSString
+                    let imagePath: NSString = dict.valueForKey("imagePath") as NSString
                     
-                    let article: Article = Article(name: name, message: message)
+                    let article: Article = Article(name: name, message: message, imagePath:imagePath)
                     articleArray.addObject(article)
                 }
                 
                 success(responseArray: articleArray)
+            }
+        }
+    }
+    
+    class func getImage(path: NSString, success: (theImage: UIImage!)->(), failure: (error: NSError!)->()) {
+        
+        Alamofire.request(.GET, NSURL(string: path)!)
+        .response() { (_, _, data, error) in
+            
+            if error != nil {
+                failure(error: error)
+            }
+            else {
+                let image = UIImage(data: data! as NSData)
+                success(theImage: image)
             }
         }
     }
