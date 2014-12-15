@@ -13,7 +13,7 @@ class APIHelper: NSObject {
     
     class func getArticles(success: (responseArray: NSArray!)->(), failure: (error: NSError!)->()) {
         
-        Alamofire.request(.GET, "http://hgwhittle.com/stuff.php", parameters: nil, encoding: .JSON)
+        Alamofire.request(.GET, "https://hgwhittle.com/stuff.php", parameters: nil, encoding: .JSON)
         .responseJSON { (request, response, JSON, error) -> Void in
             
             if error != nil {
