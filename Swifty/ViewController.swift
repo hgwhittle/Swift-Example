@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var sourceArray: NSArray = NSArray()
     var dummyCell: ArticleCell = ArticleCell()
     
-    @IBOutlet weak var theTableView: UITableView!
+    @IBOutlet weak private var theTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
