@@ -26,18 +26,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.theTableView.delegate = self;
         self.theTableView.registerNib(UINib(nibName: "ArticleCell", bundle: nil), forCellReuseIdentifier: cellID)
         
-        self.dummyCell = NSBundle.mainBundle().loadNibNamed("ArticleCell", owner: self, options: nil)[0] as ArticleCell
+        self.dummyCell = NSBundle.mainBundle().loadNibNamed("ArticleCell", owner: self, options: nil)[0] as! ArticleCell
         
         self.showActivity()
         APIHelper.getArticles({ (responseArray) -> () in
-            
             self.hideActivity()
             self.sourceArray = responseArray
             self.theTableView.reloadData()
             
         }, failure: { (error) -> () in
             self.hideActivity()
-            println(error)
+            print(error)
         })
     }
     
@@ -53,14 +52,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell: ArticleCell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as ArticleCell
+        let cell: ArticleCell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! ArticleCell
         
-        let article: Article = self.sourceArray.objectAtIndex(indexPath.row) as Article
+        let article: Article = self.sourceArray.objectAtIndex(indexPath.row) as! Article
         
-        cell.nameLabel!.text = article.name
-        cell.messageLabel!.text = article.message
+        cell.nameLabel!.text = article.name as String
+        cell.messageLabel!.text = article.message as String
         
-        APIHelper.getImage(article.imagePath, success: { (theImage) -> () in
+        APIHelper.getImage(article.imagePath as String, success: { (theImage) -> () in
             
             cell.theImageView.image = theImage
             
@@ -97,12 +96,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
-        let article: Article = self.sourceArray.objectAtIndex(indexPath.row) as Article
+        let article: Article = self.sourceArray.objectAtIndex(indexPath.row) as! Article
         let text = article.message
         let width = self.dummyCell.messageLabel.frame.size.width
         let font = self.dummyCell.messageLabel.font
         
-        let string: NSAttributedString = NSAttributedString(string: text, attributes: [NSFontAttributeName: font])
+        let string: NSAttributedString = NSAttributedString(string: text as String, attributes: [NSFontAttributeName: font])
         
         let rect = string.boundingRectWithSize(CGSizeMake(width, CGFloat.max), options: NSStringDrawingOptions.UsesLineFragmentOrigin, context: nil)
         

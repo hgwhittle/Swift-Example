@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0435AA5F1A3F23C700A286DB /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0435AA591A3F237500A286DB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0463B5BE1A3B3B4D00F689C8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463B5BD1A3B3B4D00F689C8 /* Article.swift */; };
 		0463B5C01A3B43AA00F689C8 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463B5BF1A3B43AA00F689C8 /* APIHelper.swift */; };
 		0463B5C71A3B5CE900F689C8 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463B5C61A3B5CE900F689C8 /* ArticleCell.swift */; };
@@ -18,30 +17,11 @@
 		046D8B7D1A3A3C8A005CFF89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046D8B7C1A3A3C8A005CFF89 /* Images.xcassets */; };
 		046D8B801A3A3C8A005CFF89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046D8B7E1A3A3C8A005CFF89 /* LaunchScreen.xib */; };
 		046D8B8C1A3A3C8A005CFF89 /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D8B8B1A3A3C8A005CFF89 /* SwiftyTests.swift */; };
+		279039BF5B3A4E0017FC3B57 /* Pods_SwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6979EC32E218F47BA5523119 /* Pods_SwiftExample.framework */; };
+		7161A7F722E4A258A0DA9FAD /* Pods_SwiftExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A51F93BB4CC107473E2D79D /* Pods_SwiftExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0435AA581A3F237500A286DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0435AA531A3F237500A286DB /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = Alamofire;
-		};
-		0435AA5A1A3F237500A286DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0435AA531A3F237500A286DB /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = AlamofireTests;
-		};
-		0435AA5C1A3F239B00A286DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0435AA531A3F237500A286DB /* Alamofire.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
-			remoteInfo = Alamofire;
-		};
 		046D8B861A3A3C8A005CFF89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 046D8B681A3A3C8A005CFF89 /* Project object */;
@@ -58,7 +38,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0435AA5F1A3F23C700A286DB /* Alamofire.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +45,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0435AA531A3F237500A286DB /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		0463B5BD1A3B3B4D00F689C8 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		0463B5BF1A3B43AA00F689C8 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		0463B5C61A3B5CE900F689C8 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
@@ -81,6 +59,12 @@
 		046D8B851A3A3C8A005CFF89 /* SwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046D8B8A1A3A3C8A005CFF89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046D8B8B1A3A3C8A005CFF89 /* SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTests.swift; sourceTree = "<group>"; };
+		2A51F93BB4CC107473E2D79D /* Pods_SwiftExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6979EC32E218F47BA5523119 /* Pods_SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C0D606B1DA35452D4C1CEF /* Pods-SwiftExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftExampleTests/Pods-SwiftExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A8D39892CB14FFD03379B940 /* Pods-SwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftExample/Pods-SwiftExample.release.xcconfig"; sourceTree = "<group>"; };
+		BC9EB12C065C7D0A418B4B96 /* Pods-SwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftExample/Pods-SwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F30A322DE71A08A9EBFB0D9A /* Pods-SwiftExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftExampleTests/Pods-SwiftExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279039BF5B3A4E0017FC3B57 /* Pods_SwiftExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,21 +80,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7161A7F722E4A258A0DA9FAD /* Pods_SwiftExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0435AA541A3F237500A286DB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0435AA591A3F237500A286DB /* Alamofire.framework */,
-				0435AA5B1A3F237500A286DB /* AlamofireTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0463B5C11A3B5CB000F689C8 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +118,8 @@
 				046D8B721A3A3C8A005CFF89 /* Swifty */,
 				046D8B881A3A3C8A005CFF89 /* SwiftyTests */,
 				046D8B711A3A3C8A005CFF89 /* Products */,
-				0435AA531A3F237500A286DB /* Alamofire.xcodeproj */,
+				25CAEE33DC6C396259F667BD /* Pods */,
+				3384A26B3AB7AB1C9B592B4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +173,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		25CAEE33DC6C396259F667BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC9EB12C065C7D0A418B4B96 /* Pods-SwiftExample.debug.xcconfig */,
+				A8D39892CB14FFD03379B940 /* Pods-SwiftExample.release.xcconfig */,
+				F30A322DE71A08A9EBFB0D9A /* Pods-SwiftExampleTests.debug.xcconfig */,
+				A0C0D606B1DA35452D4C1CEF /* Pods-SwiftExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3384A26B3AB7AB1C9B592B4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6979EC32E218F47BA5523119 /* Pods_SwiftExample.framework */,
+				2A51F93BB4CC107473E2D79D /* Pods_SwiftExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,15 +200,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046D8B8F1A3A3C8A005CFF89 /* Build configuration list for PBXNativeTarget "SwiftExample" */;
 			buildPhases = (
+				5DBCAB70DC677A35B27F94B9 /* [CP] Check Pods Manifest.lock */,
 				046D8B6C1A3A3C8A005CFF89 /* Sources */,
 				046D8B6D1A3A3C8A005CFF89 /* Frameworks */,
 				046D8B6E1A3A3C8A005CFF89 /* Resources */,
 				04EE9BA31A3A511C00C12B01 /* Copy Frameworks */,
+				3F5660D82546F622FF5D9A14 /* [CP] Embed Pods Frameworks */,
+				691BD0AEA39C40336FD52617 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0435AA5D1A3F239B00A286DB /* PBXTargetDependency */,
 			);
 			name = SwiftExample;
 			productName = Swifty;
@@ -221,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046D8B921A3A3C8A005CFF89 /* Build configuration list for PBXNativeTarget "SwiftExampleTests" */;
 			buildPhases = (
+				BFEDAAD255A2B083C840B7AC /* [CP] Check Pods Manifest.lock */,
 				046D8B811A3A3C8A005CFF89 /* Sources */,
 				046D8B821A3A3C8A005CFF89 /* Frameworks */,
 				046D8B831A3A3C8A005CFF89 /* Resources */,
+				B576D267838BAB3CF906CF0A /* [CP] Embed Pods Frameworks */,
+				8E89E88CE16CBCED15D424F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +244,8 @@
 		046D8B681A3A3C8A005CFF89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Hunter Whittle";
 				TargetAttributes = {
@@ -265,12 +270,6 @@
 			mainGroup = 046D8B671A3A3C8A005CFF89;
 			productRefGroup = 046D8B711A3A3C8A005CFF89 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0435AA541A3F237500A286DB /* Products */;
-					ProjectRef = 0435AA531A3F237500A286DB /* Alamofire.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				046D8B6F1A3A3C8A005CFF89 /* SwiftExample */,
@@ -278,23 +277,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0435AA591A3F237500A286DB /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 0435AA581A3F237500A286DB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0435AA5B1A3F237500A286DB /* AlamofireTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AlamofireTests.xctest;
-			remoteRef = 0435AA5A1A3F237500A286DB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		046D8B6E1A3A3C8A005CFF89 /* Resources */ = {
@@ -316,6 +298,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F5660D82546F622FF5D9A14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftExample/Pods-SwiftExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DBCAB70DC677A35B27F94B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		691BD0AEA39C40336FD52617 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftExample/Pods-SwiftExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E89E88CE16CBCED15D424F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftExampleTests/Pods-SwiftExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B576D267838BAB3CF906CF0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftExampleTests/Pods-SwiftExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFEDAAD255A2B083C840B7AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		046D8B6C1A3A3C8A005CFF89 /* Sources */ = {
@@ -341,11 +416,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0435AA5D1A3F239B00A286DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			targetProxy = 0435AA5C1A3F239B00A286DB /* PBXContainerItemProxy */;
-		};
 		046D8B871A3A3C8A005CFF89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 046D8B6F1A3A3C8A005CFF89 /* SwiftExample */;
@@ -452,6 +522,7 @@
 		};
 		046D8B901A3A3C8A005CFF89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC9EB12C065C7D0A418B4B96 /* Pods-SwiftExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -465,6 +536,7 @@
 		};
 		046D8B911A3A3C8A005CFF89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D39892CB14FFD03379B940 /* Pods-SwiftExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -478,6 +550,7 @@
 		};
 		046D8B931A3A3C8A005CFF89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30A322DE71A08A9EBFB0D9A /* Pods-SwiftExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -500,6 +573,7 @@
 		};
 		046D8B941A3A3C8A005CFF89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C0D606B1DA35452D4C1CEF /* Pods-SwiftExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
